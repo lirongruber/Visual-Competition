@@ -8,6 +8,7 @@ It contains the following:
   a.	Mixed images can be found in ‘img’ folder.
   
   b.	For a ‘dummy’ version of the experiment open index.html in any browser.
+  
 2.	‘results’ folder: csv output files of the human’s answers
 
   a.	‘personal’ – subjects’ details (condition, gender, etc.)
@@ -15,6 +16,7 @@ It contains the following:
   b.	 ‘subject_answers’ – raw subjects’ text answers 
   
   c.	‘results_cond_#’ – encoded subjects’ answers (0=none, 1=chose first,2=chose second,3=chose both).
+  
 3.	‘analysis’ folder: Example codes for data generation and analysis. These codes demonstrate the major analysis we performed (pretrained models were downloaded from: https://github.com/BVLC/caffe/wiki/Model-Zoo, ImageNet dataset was downloaded from: http://image-net.org/download-images). 
   a.	‘morph_img_pair.m’-  code for mixing two images in different methods. 
   
