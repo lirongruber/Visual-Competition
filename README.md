@@ -5,7 +5,7 @@ This is the repository for the paper:
 It contains the following:
 1.	‘human experiment’ folder: codes and stimuli used in the human behavioral experiment
 
-   a.	Mixed images can be found in ‘img’ folder.
+     a.	Mixed images can be found in ‘img’ folder.
   
    b.	For a ‘dummy’ version of the experiment open index.html in any browser.
   
