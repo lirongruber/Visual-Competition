@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> What's in the image? </title>
+  <link rel='stylesheet' type='text/css' href='css/game.css'/>
+ <link rel="stylesheet" href="vendors/jquery-ui-1.12.1.custom/jquery-ui.css">
+  <script src="vendors/jquery-3.1.0.js"></script>
+  <script src="vendors/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
+  <script src="vendors/js-url-2.3.1/url.js"></script>
+  
+  <script type='text/javascript' src='js/game.js'></script>
+
+</head>
+<body>
+
+
+<h1 id="tit"> What's in the image? </h1>
+<p id="inst"> In this experiment you will see images for a split second and will be asked to tag the object/s in each image. <br> If you didn't reconized any object - please write "none" .<br> There will be total of <strong> 30 </strong> images. To be paid, you must answer all of them. <br><br> <strong> Clicking on the browser's refresh or backward button is forbidden and will result in denial of payment.</strong><br> </p>
+<div id="pers_details">
+<form method="post" name="details" id="pers_details_form" align="center">
+
+   Gender:
+  <input type="radio" name="gender" value="female">Female
+  <input type="radio" name="gender" value="male">Male 
+     <br> <br>
+  Year of birth: 
+
+  <select name="birthYear" id="yearBirth"> 
+  <option value="-">-</option>
+  <script language="JavaScript">
+      var year = 1939;
+    for (var i=1; i <=70; i++)
+  {
+  year++;
+  document.write("<option>" + year + "</option>");
+}
+// end JS code hide -->
+
+</script>
+</select>
+<!--    <span class="tooltiptext" id="year_alert_empty"> Please write your year of birth </span>
+   <span class="tooltiptext" id="year_alert_minor"> You need to be over 18 to play this game </span> -->
+</form>
+</div>
+<div id ="trial_counter">
+<a id="count_txt"> <strong> Trial: </strong> </a>
+<a id="trial_number">  <a id="tr_num_train">1</a>/<a id="tot_tr">30</a></a>
+</div>
+<div align="center"> <br> 
+<button id="start_button" class="ui-button ui-widget ui-corner-all"> Let's Start! </button> </div>
+
+<p id="trial_inst" align="center"><button id="start_trial" class="ui-button ui-widget ui-corner-all"> Click </button> and look carefully at the + sign </p>
+
+<div id="im_frame"> 
+<p id="fixation" style="display: none;" > + </p> 
+<img id="mix_im" src="img/1/1.JPEG" style="display: none;"> 
+</div> 
+
+<div id="subject_ans" style="display:none;">
+<form name="quest" method="GET">
+	<p id="quest"> What object/s did you recognize in the image? </p>
+  <textarea id="txt_box_content" name="txt_box" rows="3" cols="40" autofocus="autofocus">  </textarea>
+</form>
+<button id="submit_ans" class="ui-button ui-widget ui-corner-all"> Submit and continue </button>
+</div>
+
+<div id="dialog_empty" title="You haven't written anything">
+<p> If you didn't recognized any object, please write "none" </p>
+</div>
+
+ <div id="dialog-replay" title="Looks like you already played">
+<p> Sorry.. this game can be played only once... </p>
+</div>
+
+<div id="finish_frame" style="display:none;"> 
+  <div id="the_code"> <strong> Your code : </strong> </div> <br>
+  <div id="mturk_code"> </div> <br>
+  <img id="cheer_im" src="img/cheer.jpg" style="width:auto; height:200px;">
+
+</div> 
+</body>
+</html>
