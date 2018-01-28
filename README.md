@@ -27,7 +27,7 @@ It contains the following:
   
      d.	‘RunGLMOnImageFeatures.m’ – Trains a generalized linear model to predict networks’/humans’ choices using different features combinations. 
 
-For further details please contact: lironzgruber@weizmann.ac.il
+For further details please contact: liron.gruber@weizmann.ac.il
 
 
 
